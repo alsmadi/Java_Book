@@ -47,4 +47,24 @@ public class ComputeExpressionTest {
          cp1.testComputeExpression();
          assertTrue(cp1.k==9);
      }
+     
+     @Test
+     public void ch1Test2() {
+         boolean testValue= cp1.test;
+         assertTrue(testValue);
+     }
+     
+     @Test
+     public void ch1Test3() {
+         cp1= new ComputeExpression(5);
+         boolean testValue= cp1.test;
+         assertFalse(testValue);
+     }
+     
+     @Test
+     public void ch1Test4() {
+         cp1= new ComputeExpression(5);
+       
+         assertEquals(cp1.k,14);
+     }
 }
